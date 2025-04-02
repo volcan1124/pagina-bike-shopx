@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+</head>
+<body>
+    <header id="contacto" class="hero-section">
+        <h1>CONTACTO</h1>
+        <BR></BR><BR></BR>
+        <img src="./logo_pagina-removebg-preview.png" alt="logopagina">
+       
+        <a href="index.html">
+            <button style="
+                background-color: #007BFF; 
+                color: white; 
+                padding: 10px 20px; 
+                font-size: 16px; 
+                border: none; 
+                border-radius: 5px; 
+                cursor: pointer;">
+                Ir a inicio de Pagina
+            </button>
+        </a>
+
+    </header>
+    <section id="contacto" class="Contac-section">
+        <h2>Contacto</h2>
+        <form id="contac-form" method="post" action="/send_email">
+            <br>
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <br>
+            <input type="email" name="correo" placeholder="Correo Electronico" required>
+            <br>
+            <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <div id="flash-messages" class="flash-messages"></div>
+    
+</body>
+</html>
